@@ -2,7 +2,7 @@
   "name": "react-router",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://astroainyou.com/ReactRouter",
+  "homepage": "https://suprabh9999.github.io/ReactRouter",
   "dependencies": {
     "gh-pages": "^2.0.0",
     "react": "^16.5.2",
