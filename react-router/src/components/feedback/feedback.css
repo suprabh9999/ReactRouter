@@ -1,0 +1,13 @@
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.alignContainer{
+    width: 90%;
+    margin: auto;
+}
+.feedbackHeading{
+    color:brown;
+}
