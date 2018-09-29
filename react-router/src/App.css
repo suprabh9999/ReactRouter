@@ -2,3 +2,17 @@
     width: 90%;
     margin: auto;
 }
+
+.links{
+    padding: 5px;
+}
+.under-line-partition{
+     width: 100%;
+     height: 10px;
+     background-color: green;
+}
+
+.heading{
+    text-align: center;
+    color: green;
+}

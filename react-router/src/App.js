@@ -5,6 +5,7 @@ import ContactUs from './components/contactUs/contactUs';
 import Feedback from './components/feedback/feedback';
 import Ideas from './components/ideas/ideas';
 import './App.css';
+import { APP_ROUTES } from './constants/routes';
 
 class App extends Component {
   render() {
@@ -12,26 +13,26 @@ class App extends Component {
       <BrowserRouter>
 
         <div className='alignContainer'>
-            <h1 style={{textAlign:'center', color:'green'}}>
+            <h1 className='heading'>
               We help you Innovate your Ideas !!
             </h1>
 
-            <div style={{width:'100%',height:'10px', backgroundColor:'green'}} />
+            <div className='under-line-partition' />
 
             <ul>
-              <li style={{padding:'5px'}}> <Link to='/'> Home </Link> </li>
-              <li style={{padding:'5px'}}> <Link to='/ideas'> Ideas </Link> </li> 
-              <li style={{padding:'5px'}}> <Link to='/contact-us'> Contact Us </Link> </li>
-              <li style={{padding:'5px'}}> <Link to='/feedback'> Feedback </Link> </li> 
+              <li className='links'> <Link to={ APP_ROUTES.HOME }> Home </Link> </li>
+              <li className='links'> <Link to={ APP_ROUTES.IDEAS }> Ideas </Link> </li> 
+              <li className='links'> <Link to={ APP_ROUTES.CONTACT_US }> Contact Us </Link> </li>
+              <li className='links'> <Link to={ APP_ROUTES.FEEDBACK }> Feedback </Link> </li> 
             </ul>
 
-            <Route path='/' exact component={ Home }></Route>
+            <Route path={ APP_ROUTES.HOME } exact component={ Home }></Route>
 
-            <Route path='/contact-us' exact component={ ContactUs }></Route>
+            <Route path={ APP_ROUTES.CONTACT_US }  component={ ContactUs }></Route>
 
-            <Route path='/feedback' component={ Feedback }></Route>
+            <Route path={ APP_ROUTES.FEEDBACK } component={ Feedback }></Route>
 
-            <Route path='/ideas' component={ Ideas }></Route>
+            <Route path={ APP_ROUTES.IDEAS } component={ Ideas }></Route>
                
         </div>
         

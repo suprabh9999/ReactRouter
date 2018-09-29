@@ -1,5 +1,6 @@
 import React from 'react';
 import data from  './feedback.json';
+import './feedback.css';
 
 const feedbackMsg = ({ match })=>{
     const id = match.params.id;
@@ -13,7 +14,7 @@ const feedbackMsg = ({ match })=>{
     });
     
     return(
-        <h3 style={{marginLeft:"20px", color:"Red"}}>{ feedbackObj.value }</h3>
+        <h3 className='feedbackMsg'>{ feedbackObj.value }</h3>
     );
 }
 

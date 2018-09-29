@@ -11,3 +11,8 @@
 .feedbackHeading{
     color:brown;
 }
+
+.feedbackMsg{
+    margin-left : 20px;
+    color : red
+}
