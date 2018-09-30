@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link, Switch} from 'react-router-dom';
+import {Route, Link, Switch, Redirect} from 'react-router-dom';
 import './ideas.css';
 import Agriculture  from './topics/agriculture';
 import Business from './topics/business';
@@ -29,7 +29,7 @@ const ideas = ({ match })=>{
 
             <div className='alignContainer'>
                 <Switch>
-                    {/* <Redirect from="/ideas" to="/ideas/technology"></Redirect> */}
+                    <Redirect exact from="/ideas" to="/ideas/technology"></Redirect>
                     <Route path={ match.url + IDEAS_ROUTES.TECHNOLOGY } component={ Technology }></Route>
                     <Route path={ match.url + IDEAS_ROUTES.BUSINESS } component={ Business }></Route>
                     <Route path={ match.url + IDEAS_ROUTES.AGRICULTURE } component={ Agriculture }></Route>

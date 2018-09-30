@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, NavLink, Redirect} from 'react-router-dom';
 import Home from './components/home/home';
 import ContactUs from './components/contactUs/contactUs';
 import Feedback from './components/feedback/feedback';
@@ -22,7 +22,7 @@ class App extends Component {
 
             <ul>
               <li className='links'> 
-                <NavLink title="Home" activeClassName='active-link' to={ APP_ROUTES.HOME }> Home </NavLink> 
+                <NavLink exact title="Home" activeClassName='active-link' to={ APP_ROUTES.HOME }> Home </NavLink> 
               </li>
 
               <li className='links'> 
@@ -38,10 +38,12 @@ class App extends Component {
                 <NavLink title="Feedback" activeClassName='active-link' 
                   to={ APP_ROUTES.FEEDBACK }> Feedback </NavLink>
               </li>
-               
+
             </ul>
 
             <Switch>
+              <Redirect exact from="/" to={ APP_ROUTES.HOME }></Redirect>
+
               <Route path={ APP_ROUTES.HOME } exact component={ Home }></Route>
 
               <Route path={ APP_ROUTES.CONTACT_US }  component={ ContactUs }></Route>

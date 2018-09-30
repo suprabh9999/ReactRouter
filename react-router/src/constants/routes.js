@@ -1,5 +1,5 @@
 export const APP_ROUTES = {
-    HOME : '/',
+    HOME : '/home',
     IDEAS : '/ideas',
     CONTACT_US : '/contact-us',
     FEEDBACK : '/feedback',
