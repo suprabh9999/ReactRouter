@@ -42,7 +42,7 @@ class App extends Component {
             </ul>
 
             <Switch>
-              <Redirect exact from="/ReactRouter" to={ APP_ROUTES.HOME }></Redirect>
+              <Redirect exact from="/ReactRouter/" to={ APP_ROUTES.HOME }></Redirect>
 
               <Route path={ APP_ROUTES.HOME } exact component={ Home }></Route>
 
