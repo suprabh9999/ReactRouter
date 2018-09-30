@@ -8,7 +8,7 @@ import { FEEDBACK_ROUTES } from '../../constants/routes';
 const feedback = ({ match })=>{
     const feedbackLinks = data.feedbacks.map((feedback, index) => (
         <div key={ index }> 
-            <Link to={`${match.url}/${feedback.id}`}>{ `Feedback no.${feedback.id}` }</Link>
+            <Link title={`Feedback ${feedback.id}`} to={`${match.url}/${feedback.id}`}>{ `Feedback no.${feedback.id}` }</Link>
         </div>
     ));
     return(

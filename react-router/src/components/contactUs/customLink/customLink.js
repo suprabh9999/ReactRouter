@@ -8,7 +8,7 @@ const customLink = ({ label, to, activeOnlyWhenExact })=>{
             children={({ match }) => (
             <div className={match ? "active" : ""}>
                 {match ? "> " : ""}
-                <Link to={to}>{label}</Link>
+                <Link title={label} to={to}>{label}</Link>
             </div>
             )}
       />

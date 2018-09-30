@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import {BrowserRouter, Link, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, NavLink} from 'react-router-dom';
 import Home from './components/home/home';
 import ContactUs from './components/contactUs/contactUs';
 import Feedback from './components/feedback/feedback';
 import Ideas from './components/ideas/ideas';
 import './App.css';
 import { APP_ROUTES } from './constants/routes';
+import PageNotFound from './components/pageNotFound';
 
 class App extends Component {
   render() {
@@ -20,20 +21,38 @@ class App extends Component {
             <div className='under-line-partition' />
 
             <ul>
-              <li className='links'> <Link to={ APP_ROUTES.HOME }> Home </Link> </li>
-              <li className='links'> <Link to={ APP_ROUTES.IDEAS }> Ideas </Link> </li> 
-              <li className='links'> <Link to={ APP_ROUTES.CONTACT_US }> Contact Us </Link> </li>
-              <li className='links'> <Link to={ APP_ROUTES.FEEDBACK }> Feedback </Link> </li> 
+              <li className='links'> 
+                <NavLink title="Home" activeClassName='active-link' to={ APP_ROUTES.HOME }> Home </NavLink> 
+              </li>
+
+              <li className='links'> 
+                <NavLink title="Ideas" activeClassName='active-link' to={ APP_ROUTES.IDEAS }> Ideas </NavLink> 
+              </li> 
+
+              <li className='links'> 
+                <NavLink title="Contact Us" activeClassName='active-link' 
+                  to={ APP_ROUTES.CONTACT_US }> Contact Us </NavLink> 
+              </li>
+
+              <li className='links'>
+                <NavLink title="Feedback" activeClassName='active-link' 
+                  to={ APP_ROUTES.FEEDBACK }> Feedback </NavLink>
+              </li>
+               
             </ul>
 
-            <Route path={ APP_ROUTES.HOME } exact component={ Home }></Route>
+            <Switch>
+              <Route path={ APP_ROUTES.HOME } exact component={ Home }></Route>
 
-            <Route path={ APP_ROUTES.CONTACT_US }  component={ ContactUs }></Route>
+              <Route path={ APP_ROUTES.CONTACT_US }  component={ ContactUs }></Route>
 
-            <Route path={ APP_ROUTES.FEEDBACK } component={ Feedback }></Route>
+              <Route path={ APP_ROUTES.FEEDBACK } component={ Feedback }></Route>
 
-            <Route path={ APP_ROUTES.IDEAS } component={ Ideas }></Route>
-               
+              <Route path={ APP_ROUTES.IDEAS } component={ Ideas }></Route>
+
+              <Route component={ PageNotFound }></Route>
+            </Switch>  
+
         </div>
         
       </BrowserRouter>
