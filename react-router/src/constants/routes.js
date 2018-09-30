@@ -1,8 +1,8 @@
 export const APP_ROUTES = {
-    HOME : '/home',
-    IDEAS : '/ideas',
-    CONTACT_US : '/contact-us',
-    FEEDBACK : '/feedback',
+    HOME : '/ReactRouter/home',
+    IDEAS : '/ReactRouter/ideas',
+    CONTACT_US : '/ReactRouter/contact-us',
+    FEEDBACK : '/ReactRouter/feedback',
 };
 
 export const FEEDBACK_ROUTES = {

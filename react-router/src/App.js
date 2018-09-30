@@ -11,7 +11,7 @@ import PageNotFound from './components/pageNotFound';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename="/ReactRouter">
+      <BrowserRouter>
 
         <div className='alignContainer'>
             <h1 className='heading'>
