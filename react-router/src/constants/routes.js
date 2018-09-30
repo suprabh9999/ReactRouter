@@ -1,8 +1,9 @@
+const BASEROUTE = '/ReactRouter';
 export const APP_ROUTES = {
-    HOME : '/ReactRouter/home',
-    IDEAS : '/ReactRouter/ideas',
-    CONTACT_US : '/ReactRouter/contact-us',
-    FEEDBACK : '/ReactRouter/feedback',
+    HOME : `${BASEROUTE}/home`,
+    IDEAS : `${BASEROUTE}/ideas`,
+    CONTACT_US : `${BASEROUTE}/contact-us`,
+    FEEDBACK : `${BASEROUTE}/feedback`,
 };
 
 export const FEEDBACK_ROUTES = {
