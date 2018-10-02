@@ -15,15 +15,21 @@ class App extends Component {
       <BrowserRouter>
 
         <div className='alignContainer'>
-        
-            <NavLink style={{display:"inline-block", marginRight:"20%", }} to={ APP_ROUTES.HOME }>
-              <img title="Innovation is achievement" style={{verticalAlign:"middle", borderRadius:'50px', marginBottom:'5px'}} 
-                height="80px" width="80px" src={logo} alt="Icon"/>
-            </NavLink>
+            <div className='flexContainer'>
+              <NavLink  to={ APP_ROUTES.HOME }>
+                <img title="Innovation is achievement" style={{verticalAlign:"middle", borderRadius:'50px', marginBottom:'5px'}} 
+                  height="80px" width="80px" src={logo} alt="Icon"/>
+              </NavLink>
 
-            <h1 className='heading' style={{display:"inline-block"}}>
-              We help you Innovate your Ideas !!
-            </h1>
+              <h1 className='heading' >
+                We help you Innovate your Ideas !!
+              </h1>
+
+              <NavLink  to={ APP_ROUTES.HOME }>
+                <img title="Innovation is achievement" style={{verticalAlign:"middle", borderRadius:'50px', marginBottom:'5px'}} 
+                  height="80px" width="80px" src={logo} alt="Icon"/>
+              </NavLink>
+            </div>
 
             <div className='under-line-partition' />
 
