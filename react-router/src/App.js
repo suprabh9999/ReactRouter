@@ -7,7 +7,7 @@ import Ideas from './components/ideas/ideas';
 import './App.css';
 import { APP_ROUTES } from './constants/routes';
 import PageNotFound from './components/pageNotFound';
-import logo from './assets/img/i.jpg'
+import logo from './assets/img/innovation.gif';
 
 class App extends Component {
   render() {
@@ -17,8 +17,8 @@ class App extends Component {
         <div className='alignContainer'>
         
             <NavLink style={{display:"inline-block", marginRight:"20%", }} to={ APP_ROUTES.HOME }>
-              <img title="Innovation is achievement" style={{verticalAlign:"middle"}} height="70px" 
-                width="70px" src={logo} alt="Icon"/>
+              <img title="Innovation is achievement" style={{verticalAlign:"middle", borderRadius:'50px', marginBottom:'5px'}} 
+                height="80px" width="80px" src={logo} alt="Icon"/>
             </NavLink>
 
             <h1 className='heading' style={{display:"inline-block"}}>

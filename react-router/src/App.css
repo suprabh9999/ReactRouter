@@ -9,12 +9,12 @@
 .under-line-partition{
      width: 100%;
      height: 10px;
-     background-color: green;
+     background-color: rgb(209, 53, 53);
 }
 
 .heading{
     text-align: center;
-    color: green;
+    color: rgb(42, 42, 226);
 }
 .active-link:hover{
     font-size: 20px;
