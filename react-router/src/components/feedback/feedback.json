@@ -1,0 +1,37 @@
+{
+    "feedbacks":[
+        {
+            "id":"1",
+            "value":"Awesome work !!"
+        },
+        {
+            "id":"2",
+            "value":"Keep it up !!"
+        },
+        {
+            "id":"3",
+            "value":"You are doing a great job !!"
+        },
+        {
+            "id":"4",
+            "value":"Thanks for helping us !!"
+        },
+        {
+            "id":"5",
+            "value":"We have achieved great amount of success because of you. !!"
+        },
+        {
+            "id":"6",
+            "value":"You are doing tremendous job !!"
+        },
+        {
+            "id":"7",
+            "value":"Good to see you guys !!"
+        },
+        {
+            "id":"8",
+            "value":"We are happy to have you behind us !!"
+        }
+    ]
+
+}
