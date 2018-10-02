@@ -7,7 +7,7 @@ import Ideas from './components/ideas/ideas';
 import './App.css';
 import { APP_ROUTES } from './constants/routes';
 import PageNotFound from './components/pageNotFound';
-import logo from './assets/img/i.jpg';
+import logo from './assets/img/innovation.gif';
 
 class App extends Component {
   render() {
